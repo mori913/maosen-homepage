@@ -18,7 +18,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoTwitter, IoMail, IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 
@@ -32,15 +32,15 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a second year master student in Tokyo!
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Ye Maosen
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Craftsman ( Mechanical designer / Developer / Programmer )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -55,7 +55,7 @@ const Home = () => (
             maxWidth="100px"
             display="inline-block"
             borderRadius="full"
-            src="/images/takuya.jpg"
+            src="/images/maosen.jpeg"
             alt="Profile image"
           />
         </Box>
@@ -66,16 +66,11 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
+          Maosen is a second-year master in university of tokyo with a passion for
+          building biomedical instrument he wants. He has a knack
           for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          .
+          way to solving real-life problems. When not working, he loves
+          hanging out with his camera. Currently, he is working in <Link href="http://www.bmpe.t.u-tokyo.ac.jp/en/">BMPE</Link>.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
@@ -91,39 +86,32 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>1998</BioYear>
+          Born in Qintian, Zhejiang, China.
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2020</BioYear>
+          Completed the bacher&apos;s program in Faculty of Mechanical and Intelligent Systems Engineering at Huazhong University of Science and Technology
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Works as a freelance
+          <BioYear> now </BioYear>
+          Pursue MEng degree in Biomedical, Utokyo.
+          Supervised by {' '}
+          <Link href="https://sites.google.com/site/keinakagawa6/home?authuser=0">Nakagawa Keiichi</Link>
         </BioSection>
       </Section>
 
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          I ♥
+          I Love
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
+          Jpop Music,{' '}
+          <Link href="https://space.bilibili.com/159065754/bangumi" target="_blank">
+            Anime
           </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          , Badminton,{' '}
+            Photography, Light novel 
         </Paragraph>
       </Section>
 
@@ -133,13 +121,13 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/mori913" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @craftzdog
+                @mori913
               </Button>
             </Link>
           </ListItem>
@@ -166,42 +154,17 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="mailto: yemaosen123@gmail.com" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
+                leftIcon={<Icon as={IoMail} />}
               >
-                @craftzdog
+                @ye maosen
               </Button>
             </Link>
           </ListItem>
         </List>
-
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid>
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>

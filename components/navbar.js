@@ -74,12 +74,9 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
           <LinkItem
             _target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/mori913/maosen-homepage"
             path={path}
             display="inline-flex"
             alignItems="center"
