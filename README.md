@@ -1,12 +1,12 @@
-# Takuya's Homepage
+# Mori's Homepage
 
-[https://www.craftz.dog/](https://www.craftz.dog/)
+[https://www.yemaosen.com](https://www.yemaosen.com/)
 
-## Tutorial
+## Abstract
 
-Watch how I built this website on YouTube:
+This website is adopted from [craftdog-homepage](https://www.craftz.dog/).
 
-[![YouTube thumbnail](./doc/thumb.png)](https://www.youtube.com/watch?v=bSMZgXzC9AA)
+I add multiple language support and personal 3D animation to orignal temple.
 
 ## Stack
 
@@ -33,13 +33,3 @@ $PROJECT_ROOT
 
 MIT License.
 
-You can create your own homepage for free without notifying me by forking this project under the following conditions:
-
-- Add a link to [my homepage](https://www.craftz.dog/)
-- Do not use the 3d voxel dog
-
----
-
-Looking for a Markdown note-taking app? Check out my app called Inkdrop:
-
-[![Inkdrop](https://github.com/craftzdog/dotfiles-public/raw/master/images/inkdrop.png)](https://www.inkdrop.app/)
