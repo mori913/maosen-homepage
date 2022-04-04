@@ -3,14 +3,9 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
-import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
-import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/works/styly_eyecatch.png'
-import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
-import thumbAmembo from '../public/images/works/amembo_eyecatch.png'
+import thumbInkdrop from '../public/images/works/microscopy_eyecatch.png'
+import thumbModeTokyo from '../public/images/works/robot_eyecatch.jpg'
+import thumbAmembo from '../public/images/works/nba_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -21,21 +16,11 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
-            encrypted data sync support
+          <WorkGridItem id="inkdrop" title="Two photon microscopy" thumbnail={thumbInkdrop}>
+            Two-photon microscopy for imaging neurons deeper than 1mm in cortex.
           </WorkGridItem>
         </Section>
-        <Section>
-          <WorkGridItem
-            id="walknote"
-            title="walknote"
-            thumbnail={thumbWalknote}
-          >
-            Music recommendation app for iOS
-          </WorkGridItem>
-        </Section>
-
+       
       </SimpleGrid>
 
       <Section delay={0.2}>
@@ -49,11 +34,11 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
+            id="robot"
             thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
+            title="Humonaid robot"
           >
-            The mode magazine for understanding to personally enjoy Japan
+            The Humonaid robots build for Robocup and FIRA
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -62,15 +47,24 @@ const Works = () => (
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
-          Old works
+          Course project
         </Heading>
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+          <WorkGridItem id="nba" thumbnail={thumbAmembo} title="NBA champion">
+            A visual anlytics website for NBA data and predict the NBA champion in 2022. 
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.6}>
+          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Job comparision">
+            A visual anlytics website for NBA data and predict the NBA champion in 2022. 
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.6}>
+          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="File synchronize">
+            A visual anlytics website for NBA data and predict the NBA champion in 2022. 
           </WorkGridItem>
         </Section>
       </SimpleGrid>

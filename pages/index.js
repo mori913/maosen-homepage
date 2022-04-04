@@ -128,13 +128,13 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
+            <Link href="https://twitter.com/BI4mkal8nhVXFdJ" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoTwitter} />}
               >
-                @craftzdog (中文)
+                @葉茂森 (中文)
               </Button>
             </Link>
           </ListItem>

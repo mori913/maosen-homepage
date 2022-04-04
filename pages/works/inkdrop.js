@@ -8,26 +8,20 @@ const Work = () => (
   <Layout title="Inkdrop">
     <Container>
       <Title>
-        Inkdrop <Badge>2016-</Badge>
+        Two photon microscopy <Badge>2020-</Badge>
       </Title>
       <P>
-        A Markdown note-taking app with 100+ plugins, cross-platform and
-        encrypted data sync support. The life-time revenue is more than $200k.
+      Two-photon microscopy for imaging neurons up to 2mm in the cortex. Our lab use the light guiding 
+      effect of acoustic wave to reduce the scattering in biological tissue and achieve much deeper imaging depth.
       </P>
       <List ml={4} my={4}>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://www.inkdrop.app/">
-            https://www.inkdrop.app/ <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-        <ListItem>
           <Meta>Platform</Meta>
-          <span>Windows/macOS/Linux/iOS/Android</span>
+          <span>Windows</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>NodeJS, Electron, React Native</span>
+          <span>Matlab</span>
         </ListItem>
         <ListItem>
           <Meta>Blogpost</Meta>
