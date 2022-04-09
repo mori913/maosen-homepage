@@ -4,7 +4,9 @@ import {
   Link,
   List,
   ListItem,
-  SimpleGrid
+  SimpleGrid,
+  Heading,
+  Center
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -17,16 +19,15 @@ const Work = () => (
       <Title>
         Humanoid robot <Badge>2016-2017</Badge>
       </Title>
-      <P>The mode magazine for understanding to personally enjoy Japan.</P>
+      <P>The humanoid robot for robotics competition.</P>
       <P>
         It is one of the projects launched at{' '}
-        <Link href="https://innolab.jp/" target="_blank">
-          Open Innovation Lab (電通イノラボ) <ExternalLinkIcon mx="2px" />
+        <Link href="http://english.mse.hust.edu.cn/" target="_blank">
+          School of Mechanical Engineering, Huazhong Univ of Sci&Eng<ExternalLinkIcon mx="2px" />
         </Link>
-        , aiming to visualize the impact of media contents on the visit of
-        foreign high-intellect class to Japan, who are highly interested in
-        Japanese culture. I joined the project to build its mobile app for iOS
-        where you can read free articles of the magazine.
+        , aiming to cultivate the Engineering skills of students through competition between domestic and international teams, who are highly interested in
+        Japanese culture. I joined the project to build robotics electrical control
+         board and embedded software.
       </P>
 
       <List ml={4} my={4}>
@@ -36,24 +37,22 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>C++</span>
+          <span>C++, Qt</span>
         </ListItem>
         <ListItem>
           <Meta>Press release</Meta>
-          <Link href="https://www.isid.co.jp/english/news/release/2015/pdf/20150930_ModeTokyo.pdf">
-            on Visit of Foreign High-Intellect Class to Japan{' '}
-            <ExternalLinkIcon mx="2px" />
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Meta>Press release</Meta>
-          <Link href="https://innolab.jp/news/achievement/335">
-            メディアコンテンツが訪日行動に与える影響を可視化する研究プロジェクトを始動{' '}
+          <Link href="http://mse.hust.edu.cn/info/1230/10106.htm">
+          HFR团队简介与招新{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
-
+      <Heading as="h4" fontSize={16} my={6}>
+        <Center>Introduction movies</Center>
+      </Heading>
+      <Heading as="h4" fontSize={16} my={6}>
+        <Center>Media coverage</Center>
+      </Heading>
       <WorkImage src="/images/works/robot_eyecatch.jpg" alt="mode.tokyo" />
       <SimpleGrid columns={2} gap={2}>
         <WorkImage src="/images/works/robot_01.png" alt="mode.tokyo" />

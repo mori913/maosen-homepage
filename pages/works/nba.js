@@ -24,7 +24,7 @@ const Work = () => (
         <Image src="/images/works/amembo_icon.png" alt="icon" />
       </Center>
       <P>
-        P2P private file sharing tool with MSN Messenger integration for Windows
+        Course project of Data and Visual Analytics
       </P>
       <UnorderedList ml={4} my={4}>
         <ListItem>ファイル転送がサイズ制限無く高速に出来ます。</ListItem>
@@ -54,15 +54,15 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React</span>
-        </ListItem>
-        <ListItem>
-          <Meta>Last update</Meta>
-          <span>2008/03/23</span>
+          <span>React, Chakra UI, D3.js</span>
         </ListItem>
         <ListItem>
           <Meta>Source code</Meta>
-          <Link href="https://w.atwiki.jp/amembo/">使い方wiki</Link>
+          <Link href="https://github.com/mori913/NBA">readme</Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Poster</Meta>
+          <Link href="https://w.atwiki.jp/amembo/"></Link>
         </ListItem>
       </List>
 

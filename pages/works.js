@@ -4,7 +4,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbInkdrop from '../public/images/works/microscopy_eyecatch.png'
-import thumbModeTokyo from '../public/images/works/robot_eyecatch.jpg'
+import thumbJobcomparision from '../public/images/works/jobcomparision_eyecatch.png'
+import thumbRobot from '../public/images/works/robot_eyecatch.jpg'
 import thumbAmembo from '../public/images/works/nba_eyecatch.png'
 
 const Works = () => (
@@ -35,8 +36,17 @@ const Works = () => (
         <Section delay={0.3}>
           <WorkGridItem
             id="robot"
-            thumbnail={thumbModeTokyo}
+            thumbnail={thumbRobot}
             title="Humonaid robot"
+          >
+            The Humonaid robots build for Robocup and FIRA
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="robot"
+            thumbnail={thumbRobot}
+            title="Interventional robot"
           >
             The Humonaid robots build for Robocup and FIRA
           </WorkGridItem>
@@ -58,8 +68,8 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Job comparision">
-            A visual anlytics website for NBA data and predict the NBA champion in 2022. 
+          <WorkGridItem id="jobcomparision" thumbnail={thumbJobcomparision} title="Job comparision">
+          An android application that allows a user to compare job offers based on muiltiple options. 
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
