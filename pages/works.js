@@ -3,11 +3,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbInkdrop from '../public/images/works/microscopy_eyecatch.png'
+import thumbTPM from '../public/images/works/microscopy_eyecatch.png'
 import thumbJobcomparision from '../public/images/works/jobcomparision_eyecatch.png'
 import thumbRobot from '../public/images/works/robot_eyecatch.jpg'
 import thumbNBA from '../public/images/works/nba_eyecatch.png'
-import thumbDSF from '../public/images/works/dfs_eyecatch.png'
+import thumbSurgical from '../public/images/works/surgery_eyecatch.jpg'
+import thumbDFS from '../public/images/works/DFS_eyecatch.png'
 
 const Works = () => (
   <Layout title="Works">
@@ -18,7 +19,7 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Two photon microscopy" thumbnail={thumbInkdrop}>
+          <WorkGridItem id="TPM" title="Two photon microscopy" thumbnail={thumbTPM}>
             Two-photon microscopy for imaging neurons deeper than 1mm in cortex.
           </WorkGridItem>
         </Section>
@@ -46,10 +47,10 @@ const Works = () => (
         <Section delay={0.3}>
           <WorkGridItem
             id="robot"
-            thumbnail={thumbRobot}
+            thumbnail={thumbSurgical}
             title="Interventional robot"
           >
-            The Humonaid robots build for Robocup and FIRA
+            I am responsible for developing the interventional mechanical structure and motor control.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -74,8 +75,8 @@ const Works = () => (
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="DSF" thumbnail={thumbDSF} title="File synchronize">
-            A visual anlytics website for NBA data and predict the NBA champion in 2022. 
+          <WorkGridItem id="DFS" thumbnail={thumbDFS} title="Distributed File System">
+  This project generates an remote procedure call (RPC) service that will perform basic file operations. The second part is to turn that gRPC service to a distribued file system (DFS) that provides coherency and atomicity.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
