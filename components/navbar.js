@@ -74,6 +74,10 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
+          <LinkItem href="/travel" path={path}>
+            Travel 
+          </LinkItem>
+
           <LinkItem
             _target="_blank"
             href="https://github.com/mori913/maosen-homepage"
