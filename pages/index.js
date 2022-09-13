@@ -62,11 +62,12 @@ const Home = () => (
           Work
         </Heading>
         <Paragraph>
-          Maosen is a second-year master in university of tokyo with a passion for
-          building biomedical instrument he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems. When not working, he loves
-          hanging out with his camera. Currently, he is working in <Link href="http://www.bmpe.t.u-tokyo.ac.jp/en/">BMPE</Link>.
+          Maosen is a second-year master in university of tokyo with a passion
+          for building biomedical instrument he wants. He has a knack for all
+          things launching products, from planning and designing all the way to
+          solving real-life problems. When not working, he loves hanging out
+          with his camera. Currently, he is working in{' '}
+          <Link href="http://www.bmpe.t.u-tokyo.ac.jp/en/">BMPE</Link>.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" scroll={false}>
@@ -82,18 +83,22 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>1998</BioYear>
-          Born in Qintian, Zhejiang, China.
+          <BioYear> now </BioYear>
+          Pursue MEng degree in Biomedical, Utokyo. Supervised by{' '}
+          <Link href="https://sites.google.com/site/keinakagawa6/home?authuser=0">
+            Nakagawa Keiichi
+          </Link>
         </BioSection>
+
         <BioSection>
           <BioYear>2020</BioYear>
-          Completed the bacher&apos;s program in Faculty of Mechanical and Intelligent Systems Engineering at Huazhong University of Science and Technology
+          Completed the bacher&apos;s program in Faculty of Mechanical and
+          Intelligent Systems Engineering at Huazhong University of Science and
+          Technology
         </BioSection>
         <BioSection>
-          <BioYear> now </BioYear>
-          Pursue MEng degree in Biomedical, Utokyo.
-          Supervised by {' '}
-          <Link href="https://sites.google.com/site/keinakagawa6/home?authuser=0">Nakagawa Keiichi</Link>
+          <BioYear>1998</BioYear>
+          Born in Qintian, Zhejiang, China.
         </BioSection>
       </Section>
 
@@ -103,11 +108,13 @@ const Home = () => (
         </Heading>
         <Paragraph>
           Jpop Music,{' '}
-          <Link href="https://space.bilibili.com/159065754/bangumi" target="_blank">
+          <Link
+            href="https://space.bilibili.com/159065754/bangumi"
+            target="_blank"
+          >
             Anime
           </Link>
-          , Badminton,{' '}
-            Photography, Light novel 
+          , Badminton, Photography, Light novel
         </Paragraph>
       </Section>
 
