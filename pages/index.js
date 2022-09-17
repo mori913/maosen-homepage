@@ -48,9 +48,8 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="105px"
             display="inline-block"
-            borderRadius="full"
             src="/images/maosen.jpeg"
             alt="Profile image"
           />

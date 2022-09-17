@@ -14,16 +14,15 @@ const Works = () => (
   <Layout title="Works">
     <Container>
       <Heading as="h3" fontSize={20} mb={4}>
-        Current research 
+        Current research
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="TPM" title="Two photon microscopy" thumbnail={thumbTPM}>
+          <WorkGridItem id="TPM" title="PAG-TPM" thumbnail={thumbTPM}>
             Two-photon microscopy for imaging neurons deeper than 1mm in cortex.
           </WorkGridItem>
         </Section>
-       
       </SimpleGrid>
 
       <Section delay={0.2}>
@@ -34,7 +33,7 @@ const Works = () => (
         </Heading>
       </Section>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <SimpleGrid columns={[1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem
             id="robot"
@@ -50,7 +49,8 @@ const Works = () => (
             thumbnail={thumbSurgical}
             title="Interventional robot"
           >
-            I am responsible for developing the interventional mechanical structure and motor control.
+            I am responsible for developing the interventional mechanical
+            structure and motor control.
           </WorkGridItem>
         </Section>
       </SimpleGrid>
@@ -66,17 +66,30 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.6}>
           <WorkGridItem id="nba" thumbnail={thumbNBA} title="NBA champion">
-            A visual anlytics website for NBA data and predict the NBA champion in 2022. 
+            A visual anlytics website for NBA data and predict the NBA champion
+            in 2022.
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="jobcomparision" thumbnail={thumbJobcomparision} title="Job comparision">
-          An android application that allows a user to compare job offers based on muiltiple options. 
+          <WorkGridItem
+            id="jobcomparision"
+            thumbnail={thumbJobcomparision}
+            title="Job comparision"
+          >
+            An android application that allows a user to compare job offers
+            based on muiltiple options.
           </WorkGridItem>
         </Section>
         <Section delay={0.6}>
-          <WorkGridItem id="DFS" thumbnail={thumbDFS} title="Distributed File System">
-  This project generates an remote procedure call (RPC) service that will perform basic file operations. The second part is to turn that gRPC service to a distribued file system (DFS) that provides coherency and atomicity.
+          <WorkGridItem
+            id="DFS"
+            thumbnail={thumbDFS}
+            title="Distributed File System"
+          >
+            This project generates an remote procedure call (RPC) service that
+            will perform basic file operations. The second part is to turn that
+            gRPC service to a distribued file system (DFS) that provides
+            coherency and atomicity.
           </WorkGridItem>
         </Section>
       </SimpleGrid>

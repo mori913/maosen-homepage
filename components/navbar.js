@@ -74,8 +74,11 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="/travel" path={path}>
-            Travel 
+          <LinkItem href="/photography" path={path}>
+            Photography
+          </LinkItem>
+          <LinkItem href="/blog" path={path}>
+            Blog
           </LinkItem>
 
           <LinkItem
@@ -93,7 +96,6 @@ const Navbar = props => {
         </Stack>
 
         <Box flex={1} align="right">
-          
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -111,9 +113,13 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                <NextLink href="/photography" passHref>
+                  <MenuItem as={Link}>Photography</MenuItem>
                 </NextLink>
+                <NextLink href="/blog" passHref>
+                  <MenuItem as={Link}>Blog</MenuItem>
+                </NextLink>
+
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
