@@ -39,7 +39,7 @@ const Choropleth = (svgRef, country) => {
     .attr(`width`, `100%`)
     .attr(`height`, `100%`)
 
-  // 都道府県の領域データをpathで描画
+  // the map of prefecture
   svg
     .selectAll(`path`)
     .data(geoJson.features)
@@ -52,10 +52,32 @@ const Choropleth = (svgRef, country) => {
     .attr(`fill-opacity`, item => {
       // メモ
       // item.properties.name_ja に都道府県名が入っている
-
+      if (item.properties.name_ja === "和歌山県" || item.properties.name_ja === "愛知県" || item.properties.name_ja === "東京都") {
+        return 1;
+        
+      }
       // 透明度をランダムに指定する (0.0 - 1.0)
-      return 0
+      return 0.1
     })
+    .on(`mouseover`, function(item)  {
+
+      // マウス位置の都道府県領域を赤色に変更
+      d3.select(this).attr(`fill`, `#CC4C39`);
+      d3.select(this).attr(`stroke-width`, `1`);
+    })
+
+
+    /**
+     * 都道府県領域の MouseOut イベントハンドラ
+     */
+    .on(`mouseout`, function (item) {
+      // ラベルグループを削除
+      svg.select('#label-group').remove();
+
+      // マウス位置の都道府県領域を青色に戻す
+      d3.select(this).attr(`fill`, `#2566CC`);
+      d3.select(this).attr(`stroke-width`, `0.25`);
+    });
 }
 const Chart = ({ country }) => {
   const svg = React.useRef(null)
