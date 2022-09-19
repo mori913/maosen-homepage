@@ -79,6 +79,7 @@ const Choropleth = (svgRef, country) => {
       d3.select(this).attr(`stroke-width`, `0.25`);
     });
 }
+/* eslint-disable */
 const Chart = ({ country }) => {
   const svg = React.useRef(null)
 
