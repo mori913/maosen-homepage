@@ -1,5 +1,15 @@
 {
+  "/404": "pages/404.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/blog": "pages/blog.html",
+  "/": "pages/index.js",
+  "/photography": "pages/photography.js",
+  "/works": "pages/works.js",
+  "/works/inkdrop": "pages/works/inkdrop.js",
+  "/works/jobcomparision": "pages/works/jobcomparision.js",
+  "/works/nba": "pages/works/nba.js",
+  "/works/robot": "pages/works/robot.js",
+  "/works/walknote": "pages/works/walknote.js",
   "/_error": "pages/_error.js"
 }

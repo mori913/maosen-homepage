@@ -86,7 +86,7 @@ const Chart = ({ country }) => {
   // eslint-disable-next-line no-use-before-define
   React.useEffect(() => {
     Choropleth(svg, country)
-  }, [{ svg, country }])
+  }, [ svg, country ])
 
   return <svg ref={svg} />
 }
