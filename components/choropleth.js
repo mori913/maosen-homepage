@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-
+import React from 'react'
 import japanGeoJson from './../public/countries/japan.geo.json'
 import chinaGeoJson from './../public/countries/china.geo.json'
 import germanGeoJson from './../public/countries/geman.geo.json'
