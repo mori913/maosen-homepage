@@ -5,7 +5,6 @@ import {
   Text,
   LinkBox,
   LinkOverlay,
-  useColorModeValue
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 

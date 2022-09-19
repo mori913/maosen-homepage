@@ -1,5 +1,5 @@
 import * as d3 from 'd3'
-import React, { useRef, SVGSVGElement } from 'react'
+
 import japanGeoJson from './../public/countries/japan.geo.json'
 import chinaGeoJson from './../public/countries/china.geo.json'
 import germanGeoJson from './../public/countries/geman.geo.json'
@@ -59,7 +59,7 @@ const Choropleth = (svgRef, country) => {
       // 透明度をランダムに指定する (0.0 - 1.0)
       return 0.1
     })
-    .on(`mouseover`, function(item)  {
+    .on(`mouseover`, function()  {
 
       // マウス位置の都道府県領域を赤色に変更
       d3.select(this).attr(`fill`, `#CC4C39`);
@@ -70,7 +70,7 @@ const Choropleth = (svgRef, country) => {
     /**
      * 都道府県領域の MouseOut イベントハンドラ
      */
-    .on(`mouseout`, function (item) {
+    .on(`mouseout`, function () {
       // ラベルグループを削除
       svg.select('#label-group').remove();
 
