@@ -7,9 +7,12 @@ export default {
   greeting: "Hello, I'm a second year master student in Utokyo",
   briefIntroduction: 'Craftsman (  Developer / Programmer / Mechanical designer)',
   work: "",
-  bio: "",
+  workContent:"Maosen is a second-year master in university of tokyo with a passion for building biomedical instrument he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems. When not working, he loves hanging out with his camera. Currently, he is working in BMPE.",
   love: "I love",
-  loveContent: "{Photography, Anime, light novel, J-pop ",
+  loveContent: "Photography, Anime, light novel, J-pop",
   web: "On the web",
-
+  bio: "Education",
+  educationContent1: "東京大学工学研究科バイオエンジニアリング修士二年",
+  educationContent2: "Completed the bacher&apos;s program in Faculty of Mechanical and Intelligent Systems Engineering at Huazhong University of Science and Technology",
+  educationContent3: "Graduated from 1st high school of Chongren Perture",
 }

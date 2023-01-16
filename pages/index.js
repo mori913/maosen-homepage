@@ -79,10 +79,7 @@ function Home() {
           <Heading as="h3" variant="section-title">
             {t.work}
           </Heading>
-          <Paragraph>
-            {t.workContent}
-            <Link href="http://www.bmpe.t.u-tokyo.ac.jp/">BMPE</Link>.
-          </Paragraph>
+          <Paragraph>{t.workContent}</Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works" scroll={false}>
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -94,11 +91,11 @@ function Home() {
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            {t.education}
+            {t.bio}
           </Heading>
           <BioSection>
             <BioYear> now </BioYear>
-            Pursue MEng degree in Biomedical, Utokyo. Supervised by{' '}
+            {t.educationContent1}Supervised by{' '}
             <Link href="https://sites.google.com/site/keinakagawa6/home?authuser=0">
               Nakagawa Keiichi
             </Link>
@@ -106,13 +103,11 @@ function Home() {
 
           <BioSection>
             <BioYear>2020</BioYear>
-            Completed the bacher&apos;s program in Faculty of Mechanical and
-            Intelligent Systems Engineering at Huazhong University of Science
-            and Technology
+            {t.educationContent2}
           </BioSection>
           <BioSection>
-            <BioYear>1998</BioYear>
-            Born in Qintian, Zhejiang, China.
+            <BioYear>2016</BioYear>
+            {t.educationContent3}
           </BioSection>
         </Section>
 

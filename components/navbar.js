@@ -1,5 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
+import Region from '../locales/content'
 import {
   Container,
   Box,
@@ -17,6 +18,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import { useRouter } from 'next/router'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
@@ -38,7 +40,8 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
   const { path } = props
-
+  const router = useRouter()
+  let t = Region(router)
   return (
     <Box
       position="fixed"
@@ -72,13 +75,13 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            {t.works}
           </LinkItem>
           <LinkItem href="/photography" path={path}>
-            Photography
+            {t.photography}
           </LinkItem>
           <LinkItem href="/blog" path={path}>
-            Blog
+            {t.blog}
           </LinkItem>
 
           <LinkItem
@@ -91,7 +94,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            {t.source}
           </LinkItem>
         </Stack>
 
@@ -117,14 +120,14 @@ const Navbar = props => {
                   <MenuItem as={Link}>Photography</MenuItem>
                 </NextLink>
                 <NextLink href="/blog" passHref>
-                  <MenuItem as={Link}>Blog</MenuItem>
+                  <MenuItem as={Link}>{t.blog}</MenuItem>
                 </NextLink>
 
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 >
-                  View Source
+                  {t.source}
                 </MenuItem>
               </MenuList>
             </Menu>
