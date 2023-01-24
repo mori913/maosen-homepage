@@ -26,8 +26,7 @@ function Works() {
         <SimpleGrid columns={[1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="tpm" title={t.tpm} thumbnail={thumbTPM}>
-              Two-photon microscopy for imaging neurons deeper than 1mm in
-              cortex.
+            {t.tpmContent}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -36,7 +35,7 @@ function Works() {
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            Collaborations
+          {t.collaboration}
           </Heading>
         </Section>
 
@@ -45,7 +44,7 @@ function Works() {
             <WorkGridItem
               id="robot"
               thumbnail={thumbRobot}
-              title="Humonaid robot"
+              title= {t.robot}
             >
               The Humonaid robots build for Robocup and FIRA
             </WorkGridItem>
@@ -66,13 +65,13 @@ function Works() {
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            Course project
+          {t.project}
           </Heading>
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.6}>
-            <WorkGridItem id="nba" thumbnail={thumbNBA} title="NBA champion">
+            <WorkGridItem id="nba" thumbnail={thumbNBA} title={t.nba}>
               A visual anlytics website for NBA data and predict the NBA
               champion in 2022.
             </WorkGridItem>
@@ -81,7 +80,7 @@ function Works() {
             <WorkGridItem
               id="jobcomparision"
               thumbnail={thumbJobcomparision}
-              title="Job comparision"
+              title={t.job}
             >
               An android application that allows a user to compare job offers
               based on muiltiple options.
@@ -91,12 +90,9 @@ function Works() {
             <WorkGridItem
               id="DFS"
               thumbnail={thumbDFS}
-              title="Distributed File System"
+              title={t.dfs}
             >
-              This project generates an remote procedure call (RPC) service that
-              will perform basic file operations. The second part is to turn
-              that gRPC service to a distribued file system (DFS) that provides
-              coherency and atomicity.
+            {t.dfsContent}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
