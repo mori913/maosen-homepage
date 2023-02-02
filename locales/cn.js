@@ -14,44 +14,44 @@ export default{
       <Link href="http://www.bmpe.t.u-tokyo.ac.jp/">(BMPE)</Link>に在籍中。
     </>
   ),
-  love: '趣味',
+  love: '兴趣',
   loveContent: (
     <>
-      撮影、
+      摄影、
       <Link href="https://space.bilibili.com/159065754/bangumi" target="_blank">
-        アニメ
+        动漫
       </Link>
-      、ライトノベル、ジェイ-ポップ
+      、轻小说、日本流行音乐
     </>
   ),
   web: '連絡',
   bio: '学歴',
   educationContent1: (
     <>
-      東京大学工学研究科 バイオエンジニアリング 修士二年。<br></br>指導教員：
+      東京大学工学部 生物影像系 研究生二年级。<br></br>指导教师：
       <Link href="https://sites.google.com/site/keinakagawa6/home?authuser=0">
         中川桂一
       </Link>
     </>
   ),
-  educationContent2: '華中科技大学 知能機械工学　卒業',
-  educationContent3: '崇仁県第一高校 卒業',
+  educationContent2: '华中科技大学 机械设计制造及其自动化　本科毕业',
+  educationContent3: '崇仁县第一中学 高中毕业',
   research: '现在的研究',
-  tpm: '深部組織二光子顕微鏡',
+  tpm: '深层双光子显微镜',
   tpmContent:
-    '生きた脳皮質の神経活動計測を目指し、音響光導波路（PAG）に基づく皮質の機能を解明するためのシステムを開発する。',
-  robot: '人間ロボット',
-  robotContent:'ロボカップやFIRAなど大会を参加するために、人間ロボットを作られた',
+    '开发一个基于声光波导（PAG）的系统，用于测量活体大脑皮层的神经活动，以阐明皮层功能。',
+  robot: '人形机器人',
+  robotContent:'人型机器人是为了参加RoboCup和FIRA等比赛而制造的。',
   collaboration: '合作项目',
   project: '课程项目',
-  ivr:'画像下治療装置',
-  ivrContent:'肺癌の介入装置の設計とステップモータの制御ソフトウェアの作成',
-  nba: 'NBA分析',
-  nbaContent:'NBAデータや地理の可視化分析サイト、2022年のNBAチャンピオンを予測する。',
-  job: '職種比較',
-  jobContent:'年収、年間賞与、退職金などの項目から求人情報を比較できるアンドロイドアプリケーションです。',
+  ivr:'介入放射装置',
+  ivrContent:'设计肺癌干预装置和创建步进电机的控制软件。',
+  nba: 'NBA冠军预测',
+  nbaContent:'NBA数据和地理可视化分析网站，预测2022年的NBA冠军。',
+  job: '工作比较',
+  jobContent:'这个安卓应用允许用户根据年薪、年终奖和退休福利等项目来比较工作机会。',
   dfs: '分布式文件系统',
-  dfsContent:"このプロジェクトは、リモートプロシージャコール（RPC）サービスを生成し、そのサービスを分散ファイルシステム（DFS）に変えます。",
+  dfsContent:"创建了一个远程过程调用（RPC）服务，并把它变成一个分布式文件系统（DFS）。",
   country:"国家",
   japan:"日本",
   china:"中国",

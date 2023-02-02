@@ -4,5 +4,6 @@
   "/_error": "pages/_error.js",
   "/works": "pages/works.js",
   "/": "pages/index.js",
-  "/works/tpm": "pages/works/tpm.js"
+  "/works/tpm": "pages/works/tpm.js",
+  "/photography": "pages/photography.js"
 }
