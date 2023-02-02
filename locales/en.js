@@ -44,5 +44,8 @@ export default {
   jobContent:'Android application compares jobs based annual salary, annual bonus, etc.',
   dfs: 'Distributed File System',
   dfsContent:"This project generates remote procedure call (RPC) services and turns them into a distributed file system (DFS).",
-
+  country:"Country",
+  japan:"Japan",
+  china:"China",
+  german:"German",
 }

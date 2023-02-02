@@ -4,6 +4,15 @@ import japanGeoJson from './../public/countries/japan.geo.json'
 import chinaGeoJson from './../public/countries/china.geo.json'
 import germanGeoJson from './../public/countries/geman.geo.json'
 const Choropleth = (svgRef, country) => {
+  const visited = new Set([
+    '和歌山県',
+    '愛知県',
+    '東京都',
+    '茨城県',
+    '福島県',
+    '愛知県',
+    '宮城県'
+  ])
   const width = 400
   const height = 400
   let scale = 1000
@@ -52,32 +61,29 @@ const Choropleth = (svgRef, country) => {
     .attr(`fill-opacity`, item => {
       // メモ
       // item.properties.name_ja に都道府県名が入っている
-      if (item.properties.name_ja === "和歌山県" || item.properties.name_ja === "愛知県" || item.properties.name_ja === "東京都") {
-        return 1;
-        
+      if (visited.has(item.properties.name_ja)) {
+        return 1
       }
       // 透明度をランダムに指定する (0.0 - 1.0)
       return 0.1
     })
-    .on(`mouseover`, function()  {
-
+    .on(`mouseover`, function () {
       // マウス位置の都道府県領域を赤色に変更
-      d3.select(this).attr(`fill`, `#CC4C39`);
-      d3.select(this).attr(`stroke-width`, `1`);
+      d3.select(this).attr(`fill`, `#CC4C39`)
+      d3.select(this).attr(`stroke-width`, `1`)
     })
-
 
     /**
      * 都道府県領域の MouseOut イベントハンドラ
      */
     .on(`mouseout`, function () {
       // ラベルグループを削除
-      svg.select('#label-group').remove();
+      svg.select('#label-group').remove()
 
       // マウス位置の都道府県領域を青色に戻す
-      d3.select(this).attr(`fill`, `#2566CC`);
-      d3.select(this).attr(`stroke-width`, `0.25`);
-    });
+      d3.select(this).attr(`fill`, `#2566CC`)
+      d3.select(this).attr(`stroke-width`, `0.25`)
+    })
 }
 
 const Chart = ({ country }) => {
@@ -86,7 +92,7 @@ const Chart = ({ country }) => {
   // eslint-disable-next-line no-use-before-define
   React.useEffect(() => {
     Choropleth(svg, country)
-  }, [ svg, country ])
+  }, [svg, country])
 
   return <svg ref={svg} />
 }

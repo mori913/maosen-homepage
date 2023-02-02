@@ -10,13 +10,17 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Choropleth from '../components/choropleth'
+import Region from '../locales/content'
+import { useRouter } from 'next/router'
 
-const Posts = () => {
+function Posts() {
+  const router = useRouter()
+  let t = Region(router)
   return (
     <Layout title="Blog">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          Country
+          {t.country}
         </Heading>
         <Tabs
           variant="unstyled"
@@ -28,13 +32,13 @@ const Posts = () => {
             bg={useColorModeValue('#EFE6DB', '#20202380')}
           >
             <Tab rounded="lg" _selected={{ bg: 'blue.500' }}>
-              Japan
+              {t.japan}
             </Tab>
             <Tab rounded="lg" _selected={{ bg: 'red.400' }}>
-              China
+              {t.china}
             </Tab>
             <Tab rounded="lg" _selected={{ bg: 'green.400' }}>
-              German
+              {t.german}
             </Tab>
           </TabList>
           <TabPanels>

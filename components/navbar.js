@@ -9,6 +9,7 @@ import {
   Heading,
   Flex,
   Menu,
+  Select,
   MenuItem,
   MenuList,
   MenuButton,
@@ -98,9 +99,23 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
 
-        <Box flex={1} align="right">
+        <Box flex={2} align="right">
+          <Box ml={4} display={'inline-block'}>
+            <Select
+              size={'md'}
+              onChange={e =>
+                router.push(router.pathname, router.asPath, {
+                  locale: e.target.value
+                })
+              }
+              defaultValue={router.locale}
+            >
+              <option value="en">En</option>
+              <option value="jp">日</option>
+              <option value="cn">中</option>
+            </Select>
+          </Box>
           <ThemeToggleButton />
-
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
               <MenuButton
