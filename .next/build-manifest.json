@@ -30,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/photography": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/photography.js"
-    ],
     "/works": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
