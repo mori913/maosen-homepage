@@ -95,10 +95,7 @@ function Home() {
           </Heading>
           <BioSection>
             <BioYear> now </BioYear>
-            {t.educationContent1}Supervised by{' '}
-            <Link href="https://sites.google.com/site/keinakagawa6/home?authuser=0">
-              Nakagawa Keiichi
-            </Link>
+            {t.educationContent1}
           </BioSection>
 
           <BioSection>
@@ -115,15 +112,7 @@ function Home() {
           <Heading as="h3" variant="section-title">
             {t.love}
           </Heading>
-          <Paragraph>
-            {t.loveContent}
-            <Link
-              href="https://space.bilibili.com/159065754/bangumi"
-              target="_blank"
-            >
-              Anime
-            </Link>
-          </Paragraph>
+          <Paragraph>{t.loveContent}</Paragraph>
         </Section>
 
         <Section delay={0.3}>

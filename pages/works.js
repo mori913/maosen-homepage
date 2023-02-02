@@ -26,37 +26,7 @@ function Works() {
         <SimpleGrid columns={[1, 2]} gap={6}>
           <Section>
             <WorkGridItem id="tpm" title={t.tpm} thumbnail={thumbTPM}>
-            {t.tpmContent}
-            </WorkGridItem>
-          </Section>
-        </SimpleGrid>
-
-        <Section delay={0.2}>
-          <Divider my={6} />
-
-          <Heading as="h3" fontSize={20} mb={4}>
-          {t.collaboration}
-          </Heading>
-        </Section>
-
-        <SimpleGrid columns={[1, 2]} gap={6}>
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="robot"
-              thumbnail={thumbRobot}
-              title= {t.robot}
-            >
-              The Humonaid robots build for Robocup and FIRA
-            </WorkGridItem>
-          </Section>
-          <Section delay={0.3}>
-            <WorkGridItem
-              id="robot"
-              thumbnail={thumbSurgical}
-              title="Interventional robot"
-            >
-              I am responsible for developing the interventional mechanical
-              structure and motor control.
+              {t.tpmContent}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -65,15 +35,14 @@ function Works() {
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-          {t.project}
+            {t.project}
           </Heading>
         </Section>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.6}>
-            <WorkGridItem id="nba" thumbnail={thumbNBA} title={t.nba}>
-              A visual anlytics website for NBA data and predict the NBA
-              champion in 2022.
+            <WorkGridItem id="robot" thumbnail={thumbRobot} title={t.robot}>
+              {t.robotContent}
             </WorkGridItem>
           </Section>
           <Section delay={0.6}>
@@ -82,17 +51,32 @@ function Works() {
               thumbnail={thumbJobcomparision}
               title={t.job}
             >
-              An android application that allows a user to compare job offers
-              based on muiltiple options.
+              {t.jobContent}
             </WorkGridItem>
           </Section>
           <Section delay={0.6}>
-            <WorkGridItem
-              id="DFS"
-              thumbnail={thumbDFS}
-              title={t.dfs}
-            >
-            {t.dfsContent}
+            <WorkGridItem id="DFS" thumbnail={thumbDFS} title={t.dfs}>
+              {t.dfsContent}
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+        <Section delay={0.2}>
+          <Divider my={6} />
+
+          <Heading as="h3" fontSize={20} mb={4}>
+            {t.collaboration}
+          </Heading>
+        </Section>
+
+        <SimpleGrid columns={[1, 2]} gap={6}>
+          <Section delay={0.3}>
+            <WorkGridItem id="nba" thumbnail={thumbNBA} title={t.nba}>
+              {t.nbaContent}
+            </WorkGridItem>
+          </Section>
+          <Section delay={0.3}>
+            <WorkGridItem id="robot" thumbnail={thumbSurgical} title={t.ivr}>
+              {t.ivrContent}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
