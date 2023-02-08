@@ -4,13 +4,13 @@ import {
   Container,
   Heading,
   Box,
-  Image,
   Button,
   List,
   ListItem,
   Icon,
   useColorModeValue
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -18,25 +18,11 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { useRouter } from 'next/router'
 import { IoLogoTwitter, IoMail, IoLogoGithub } from 'react-icons/io5'
-
-import en from '../locales/en'
-import jp from '../locales/jp'
-import cn from '../locales/cn'
+import Region from '../locales/content'
 
 function Home() {
   const router = useRouter()
-  const { locale } = router
-  let t = en
-  switch (locale) {
-    case 'jp':
-      t = jp
-      break
-    case 'cn':
-      t = cn
-      break
-    default:
-      t = en
-  }
+  let t = Region(router)
   return (
     <Layout>
       <Container>
@@ -67,7 +53,8 @@ function Home() {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              maxWidth="105px"
+              width="108px"
+              height="144px"
               display="inline-block"
               src="/images/maosen.jpeg"
               alt="Profile image"
