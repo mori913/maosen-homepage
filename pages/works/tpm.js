@@ -4,14 +4,15 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="TPM">
     <Container>
       <Title>
         Two photon microscopy <Badge>2020-</Badge>
       </Title>
       <P>
-      Two-photon microscopy for imaging neurons up to 2mm in the cortex. Our lab use the light guiding 
-      effect of acoustic wave to reduce the scattering in biological tissue and achieve much deeper imaging depth.
+        Two-photon microscopy for imaging neurons up to 2mm in the cortex. Our
+        lab use the light guiding effect of acoustic wave to reduce the
+        scattering in biological tissue and achieve much deeper imaging depth.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -27,8 +28,6 @@ const Work = () => (
           <span>To be done</span>
         </ListItem>
       </List>
-
-
     </Container>
   </Layout>
 )

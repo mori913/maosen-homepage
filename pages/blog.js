@@ -1,8 +1,9 @@
 import { Container, Heading, Box } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-const Blog = () => {
+
+function Posts() {
   return (
-    <Layout title={'Blog'}>
+    <Layout title="Blog">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
           中文
@@ -23,4 +24,6 @@ const Blog = () => {
     </Layout>
   )
 }
-export default Blog
+
+export default Posts
+export { getServerSideProps } from '../components/chakra'

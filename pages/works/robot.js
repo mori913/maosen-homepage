@@ -6,7 +6,8 @@ import {
   ListItem,
   SimpleGrid,
   Heading,
-  Center
+  Center,
+  AspectRatio
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
@@ -14,7 +15,7 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="mode.tokyo">
+  <Layout title="robot">
     <Container>
       <Title>
         Humanoid robot <Badge>2016-2017</Badge>
@@ -23,11 +24,13 @@ const Work = () => (
       <P>
         It is one of the projects launched at{' '}
         <Link href="http://english.mse.hust.edu.cn/" target="_blank">
-          School of Mechanical Engineering, Huazhong Univ of Sci&Eng<ExternalLinkIcon mx="2px" />
+          School of Mechanical Engineering, Huazhong Univ of Sci&Eng
+          <ExternalLinkIcon mx="2px" />
         </Link>
-        , aiming to cultivate the Engineering skills of students through competition between domestic and international teams, who are highly interested in
-        Japanese culture. I joined the project to build robotics electrical control
-         board and embedded software.
+        , aiming to cultivate the Engineering skills of students through
+        competition between domestic and international teams, who are highly
+        interested in Japanese culture. I joined the project to build robotics
+        electrical control board and embedded software.
       </P>
 
       <List ml={4} my={4}>
@@ -42,14 +45,22 @@ const Work = () => (
         <ListItem>
           <Meta>Press release</Meta>
           <Link href="http://mse.hust.edu.cn/info/1230/10106.htm">
-          HFR团队简介与招新{' '}
-            <ExternalLinkIcon mx="2px" />
+            HFR团队简介与招新 <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Introduction movies</Center>
       </Heading>
+      <AspectRatio maxW="640px" ratio={1.7} my={4}>
+        <iframe
+          src="https://www.youtube.com/embed/oqv14A4hJqs"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </AspectRatio>
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Media coverage</Center>
       </Heading>

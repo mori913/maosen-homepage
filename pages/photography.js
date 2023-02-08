@@ -17,7 +17,7 @@ function Posts() {
   const router = useRouter()
   let t = Region(router)
   return (
-    <Layout title="Blog">
+    <Layout title="Photography">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
           {t.country}
