@@ -12,7 +12,8 @@ const Choropleth = (svgRef, country) => {
     '福島県',
     '愛知県',
     '宮城県',
-    '北海道'
+    '北海道',
+    '栃木県'
   ])
   const width = 400
   const height = 400
